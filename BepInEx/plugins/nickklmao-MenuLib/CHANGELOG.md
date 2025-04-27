@@ -1,3 +1,6 @@
+# v2.4.1
+- Updated `REPOInputField` and `REPOSlider` to allow lowercases characters by default
+
 # v2.4.0
 - Added `REPOPopupPage.onEscapePressed (bool ShouldCloseMenuDelegate)`
   - If true is returned then the menu will be closed, otherwise the menu remains open

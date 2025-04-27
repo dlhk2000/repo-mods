@@ -1,3 +1,11 @@
+# v1.2.2
+- Fixed an issue that caused float sliders to have the wrong number of decimal places
+
+# v1.2.1
+- Modified text styles (Everything won't be capitalized anymore)
+- Removed Descriptions
+  - Until I can figure out a better way to handle them, they're gone for now
+
 # v1.2.0
 - Uses MenuLib v2.4.0
 - Plugins are now displayed alphabetically

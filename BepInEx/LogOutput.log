@@ -10,14 +10,12 @@
 [Message:   BepInEx] Preloader finished
 [Message:   BepInEx] Chainloader ready
 [Message:   BepInEx] Chainloader started
-[Info   :   BepInEx] 6 plugins to load
-[Info   :   BepInEx] Loading [REPO_HD 1.0.3]
-[Info   :   REPO_HD] Applying Harmony patches
-[Info   :   REPO_HD] Patched ExtractionPoint.Start
-[Info   :   REPO_HD] Patched GraphicsManager.UpdateRenderSize
-[Info   :   REPO_HD] Patched RenderTextureMain.Start
-[Info   :   REPO_HD] Patched RenderTextureMain.Update
-[Info   :   REPO_HD] 4 patches applied
+[Info   :   BepInEx] 8 plugins to load
+[Info   :   BepInEx] Loading [REPOLib 2.0.1]
+[Info   :   REPOLib] REPOLib has awoken!
+[Info   :   BepInEx] Loading [ExtractionPointConfirmButton 1.1.0]
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ExtractionPointConfirmButton has awoken!
+[Info   :   REPOLib] Loading bundle at C:\Users\user\AppData\Roaming\Thunderstore Mod Manager\DataFolder\REPO\profiles\repo\BepInEx\plugins\Zehs-ExtractionPointConfirmButton\extractionpointconfirmbutton_assets...
 [Info   :   BepInEx] Loading [MapValueTracker 1.2.2]
 [Info   :MapValueTracker] Plugin MapValueTracker is loaded!
 [Info   :   BepInEx] Loading [Menu Lib 2.4.0]
@@ -36,16 +34,27 @@
 [Info   :Photon Redirector] Plugin Loaded!
 [Info   :Photon Redirector] Using AppID: 20cc4254-e548-418a-9dc1-c9fe16f57461
 [Info   :Photon Redirector] Using Region: asia
+[Info   :   BepInEx] Loading [Late Join 0.1.2]
+[Debug  : Late Join] Hooking `RunManager.ChangeLevel`
+[Debug  : Late Join] Hooking `PlayerAvatar.Spawn`
+[Debug  : Late Join] Hooking `LevelGenerator.Start`
+[Debug  : Late Join] Hooking `PlayerAvatar.Start`
 [Info   :   BepInEx] Loading [MorePlayers 1.0.1]
 [Info   :zelofi.MorePlayers] zelofi.MorePlayers is now awake!
 [Message:   BepInEx] Chainloader startup complete
 [Info   : Unity Log] Odin Serializer ArchitectureInfo initialization with defaults (all unaligned read/writes disabled).
 [Info   : Unity Log] Odin Serializer detected whitelisted runtime platform WindowsPlayer and memory read test succeeded; enabling all unaligned memory read/writes.
+[Info   :   REPOLib] Initializing NetworkPrefabs.
+[Info   :   REPOLib] Replaced PhotonNetwork.PrefabPool with CustomPrefabPool.
+[Info   :   REPOLib] Finished initializing NetworkPrefabs.
+[Info   :   REPOLib] Adding levels.
+[Info   :   REPOLib] Adding valuables to valuable presets.
 [Info   : Unity Log] VERSION: v0.1.2
 [Info   : Unity Log] STEAM ID: 76561199180524435
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Info   :   REPOLib] Adding items.
 [Info   : Unity Log] Getting Steam Auth Ticket...
+[Info   :   REPOLib] Finished loading bundles.
+[Info   :   REPOLib] Finished initializing custom commands.
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] In ResetValues()
 [Debug  :MapValueTracker] Total Map Value: 0
@@ -53,58 +62,13 @@
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] After CheckForItems Total Val: 0
 [Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
-[Info   : Unity Log] Steam: Game lobby join requested: 109775241467487678
-[Info   : Unity Log] Steam: Lobby entered with ID: 109775241467487678
-[Info   : Unity Log] Steam: Region: asia
+[Info   :   REPOLib] Adding items.
 [Info   : Unity Log] Changed level to: Level - Lobby Menu
-[Info   : Unity Log] PunVoiceClientLogic Awake
-[Info   : Unity Log] Already in lobby on Network Connect. Connecting to region: asia
-[Info   : Unity Log] Sending Steam Auth Ticket...
-[Info   : Unity Log] Getting Steam Auth Ticket...
-[Warning:Photon Redirector] Overriding region from 'asia' to 'asia'
-[Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Connected to Master Server
-[Info   : Unity Log] I am not the owner.
-[Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Joined room: 109775241467487678 asia
-[Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241467487678_voice_' region asia.
-[Info   : Unity Log] Game Mode: Multiplayer
-[Info   : Unity Log] NetworkConnect destroyed.
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
-[Info   : Unity Log] [2025-04-27T13:06:39] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
-[Debug  :MapValueTracker] Generating Started. Resetting to zero.
-[Debug  :MapValueTracker] After CheckForItems Total Val: 0
-[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
-[Info   :Photon Redirector] Redirecting Photon Traffic
-[Warning: Unity Log] [2025-04-27T13:06:39] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
-[Warning: Unity Log] [2025-04-27T13:06:43] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
-[Info   : Unity Log] Master client left...
-[Info   : Unity Log] Player left room: YEsNoo
-[Info   : Unity Log] Leave Photon
-[Info   : Unity Log] Steam: Leaving lobby...
-[Info   : Unity Log] Cancelling Steam Auth Ticket...
-[Info   : Unity Log] Disconnected from server for reason DisconnectByClientLogic
-[Info   : Unity Log] Leave to Main Menu
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
-[Debug  :MapValueTracker] Generating Started. Resetting to zero.
-[Debug  :MapValueTracker] In ResetValues()
-[Debug  :MapValueTracker] Total Map Value: 0
-[Debug  :MapValueTracker] Room generation started. Now val is 0
-[Debug  :MapValueTracker] Generating Started. Resetting to zero.
-[Debug  :MapValueTracker] After CheckForItems Total Val: 0
-[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
-[Info   : Unity Log] Changed level to: Level - Lobby Menu
-[Info   : Unity Log] [2025-04-27T13:08:53] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
 [Info   : Unity Log] PunVoiceClientLogic Awake
 [Info   : Unity Log] Created lobby on Network Connect.
 [Info   : Unity Log] Steam: Hosting lobby...
-[Info   : Unity Log] Steam: Lobby created with ID: 109775241467490249
-[Info   : Unity Log] Steam: Lobby entered with ID: 109775241467490249
+[Info   : Unity Log] Steam: Lobby created with ID: 109775241470280584
+[Info   : Unity Log] Steam: Lobby entered with ID: 109775241470280584
 [Info   : Unity Log] Steam: Region: 
 [Info   : Unity Log] Sending Steam Auth Ticket...
 [Info   : Unity Log] Getting Steam Auth Ticket...
@@ -115,336 +79,1098 @@
 [Info   : Unity Log] I am the owner.
 [Info   : Unity Log] Steam: Setting lobby data...
 [Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Created room successfully: 109775241467490249
-[Info   : Unity Log] Joined room: 109775241467490249 asia
+[Info   : Unity Log] Created room successfully: 109775241470280584
+[Info   : Unity Log] Joined room: 109775241470280584 asia
 [Info   :Photon Redirector] Redirecting Photon Traffic
 [Info   : Unity Log] Game Mode: Multiplayer
 [Info   : Unity Log] NetworkConnect destroyed.
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
-[Info   : Unity Log] [2025-04-27T13:08:57] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
-[Warning: Unity Log] [2025-04-27T13:08:57] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
+[Info   : Unity Log] [2025-04-27T13:30:10] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Warning: Unity Log] [2025-04-27T13:30:10] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
 [Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241467490249_voice_' region asia.
+[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241470280584_voice_' region asia.
+[Info   :Photon Redirector] Redirecting Photon Traffic
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] In ResetValues()
 [Debug  :MapValueTracker] Total Map Value: 0
 [Debug  :MapValueTracker] Room generation started. Now val is 0
-[Info   :Photon Redirector] Redirecting Photon Traffic
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] After CheckForItems Total Val: 0
 [Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
 [Info   : Unity Log] Steam: Unlocking lobby...
-[Warning: Unity Log] [2025-04-27T13:09:01] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #3 of not inited player 1
+[Warning: Unity Log] [2025-04-27T13:30:15] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 1
 [Info   : Unity Log] Steam: Lobby member joined: YEsNoo
-[Warning: Unity Log] [2025-04-27T13:10:13] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
+[Warning: Unity Log] [2025-04-27T13:30:53] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
+[Warning: Unity Log] [2025-04-27T13:30:53] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
+[Warning: Unity Log] [2025-04-27T13:30:53] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for not inited voice #2 of player 2
 [Info   : Unity Log] Steam: Locking lobby...
-[Info   : Unity Log] Changed level to: Level - Wizard
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Info   : Unity Log] Changed level to: Level - Arctic
+[Info   : Unity Log] Steam: Locking lobby...
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] In ResetValues()
 [Debug  :MapValueTracker] Total Map Value: 0
 [Debug  :MapValueTracker] Room generation started. Now val is 0
-[Info   :   REPO_HD] Fixing extraction point text flicker
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 600
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 500
-[Debug  :MapValueTracker] After dollar value set Total Val: 1100
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 500
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point.
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point. (ViewID: 13)
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1600
 [Debug  :MapValueTracker] After dollar value set Total Val: 1600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ice Saw(Clone) Val: 3600
+[Debug  :MapValueTracker] After dollar value set Total Val: 5200
 [Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 2200
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Toy Monkey(Clone) Val: 1100
-[Debug  :MapValueTracker] After dollar value set Total Val: 3300
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Globe(Clone) Val: 1500
-[Debug  :MapValueTracker] After dollar value set Total Val: 4800
+[Debug  :MapValueTracker] After dollar value set Total Val: 5800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic HDD(Clone) Val: 2600
+[Debug  :MapValueTracker] After dollar value set Total Val: 8400
 [Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 500
-[Debug  :MapValueTracker] After dollar value set Total Val: 5300
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2100
-[Debug  :MapValueTracker] After dollar value set Total Val: 7400
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 8000
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1500
-[Debug  :MapValueTracker] After dollar value set Total Val: 9500
+[Debug  :MapValueTracker] After dollar value set Total Val: 8900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2200
+[Debug  :MapValueTracker] After dollar value set Total Val: 11100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Gem Box(Clone) Val: 900
+[Debug  :MapValueTracker] After dollar value set Total Val: 12000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 12600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Gem Box(Clone) Val: 900
+[Debug  :MapValueTracker] After dollar value set Total Val: 13500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 14000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Sample(Clone) Val: 2600
+[Debug  :MapValueTracker] After dollar value set Total Val: 16600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 17100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic HDD(Clone) Val: 2900
+[Debug  :MapValueTracker] After dollar value set Total Val: 20000
 [Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 500
-[Debug  :MapValueTracker] After dollar value set Total Val: 10000
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 10600
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Cube of Knowledge(Clone) Val: 10000
-[Debug  :MapValueTracker] After dollar value set Total Val: 20600
+[Debug  :MapValueTracker] After dollar value set Total Val: 20500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 21000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2000
+[Debug  :MapValueTracker] After dollar value set Total Val: 23000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Doll(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 23600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 24200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Clown(Clone) Val: 2400
+[Debug  :MapValueTracker] After dollar value set Total Val: 26600
 [Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 21200
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1500
-[Debug  :MapValueTracker] After dollar value set Total Val: 22700
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Vase(Clone) Val: 2800
-[Debug  :MapValueTracker] After dollar value set Total Val: 25500
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 26100
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Bottle(Clone) Val: 2300
-[Debug  :MapValueTracker] After dollar value set Total Val: 28400
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 500
-[Debug  :MapValueTracker] After dollar value set Total Val: 28900
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 29500
+[Debug  :MapValueTracker] After dollar value set Total Val: 27200
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
-[Debug  :MapValueTracker] After CheckForItems Total Val: 29500
-[Debug  :MapValueTracker] Generation done. Now val is 29500. Init Value: 29500
-[Debug  :MapValueTracker] BreakRPC - Current Value: 29500
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 739
-[Debug  :MapValueTracker] BreakRPC - Value lost: 761
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 28739
-[Debug  :MapValueTracker] BreakRPC - Current Value: 28739
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 570
-[Debug  :MapValueTracker] BreakRPC - Value lost: 30
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 28709
-[Debug  :MapValueTracker] BreakRPC - Current Value: 28709
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 508
-[Debug  :MapValueTracker] BreakRPC - Value lost: 62
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 28647
-[Debug  :MapValueTracker] BreakRPC - Current Value: 28647
+[Debug  :MapValueTracker] After CheckForItems Total Val: 27200
+[Debug  :MapValueTracker] Generation done. Now val is 27200. Init Value: 27200
+[Debug  :MapValueTracker] BreakRPC - Current Value: 27200
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 3561
+[Debug  :MapValueTracker] BreakRPC - Value lost: 39
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 27161
+[Debug  :MapValueTracker] BreakRPC - Current Value: 27161
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 3375
+[Debug  :MapValueTracker] BreakRPC - Value lost: 186
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 26975
+[Debug  :MapValueTracker] BreakRPC - Current Value: 26975
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 3177
+[Debug  :MapValueTracker] BreakRPC - Value lost: 198
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 26777
+[Debug  :MapValueTracker] BreakRPC - Current Value: 26777
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2785
+[Debug  :MapValueTracker] BreakRPC - Value lost: 392
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 26385
+[Debug  :MapValueTracker] BreakRPC - Current Value: 26385
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2451
+[Debug  :MapValueTracker] BreakRPC - Value lost: 334
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 26051
+[Debug  :MapValueTracker] BreakRPC - Current Value: 26051
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 806
+[Debug  :MapValueTracker] BreakRPC - Value lost: 94
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25957
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25957
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 758
+[Debug  :MapValueTracker] BreakRPC - Value lost: 48
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25909
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25909
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2181
+[Debug  :MapValueTracker] BreakRPC - Value lost: 219
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25690
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25690
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2159
+[Debug  :MapValueTracker] BreakRPC - Value lost: 22
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25668
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25668
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2135
+[Debug  :MapValueTracker] BreakRPC - Value lost: 24
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25644
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25644
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2020
+[Debug  :MapValueTracker] BreakRPC - Value lost: 115
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25529
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25529
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2269
+[Debug  :MapValueTracker] BreakRPC - Value lost: 182
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25347
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25347
 [Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 495
 [Debug  :MapValueTracker] BreakRPC - Value lost: 5
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 28642
-[Debug  :MapValueTracker] BreakRPC - Current Value: 28642
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 472
-[Debug  :MapValueTracker] BreakRPC - Value lost: 23
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 28619
-[Debug  :MapValueTracker] BreakRPC - Current Value: 28619
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1532
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1268
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 27351
-[Debug  :MapValueTracker] BreakRPC - Current Value: 27351
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 545
-[Debug  :MapValueTracker] BreakRPC - Value lost: 55
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 27296
-[Debug  :MapValueTracker] BreakRPC - Current Value: 27296
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 451
-[Debug  :MapValueTracker] BreakRPC - Value lost: 49
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 27247
-[Debug  :MapValueTracker] BreakRPC - Current Value: 27247
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 446
-[Debug  :MapValueTracker] BreakRPC - Value lost: 5
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 27242
-[Debug  :MapValueTracker] BreakRPC - Current Value: 27242
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 9505
-[Debug  :MapValueTracker] BreakRPC - Value lost: 495
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 26747
-[Debug  :MapValueTracker] BreakRPC - Current Value: 26747
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8964
-[Debug  :MapValueTracker] BreakRPC - Value lost: 541
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 26206
-[Debug  :MapValueTracker] BreakRPC - Current Value: 26206
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8466
-[Debug  :MapValueTracker] BreakRPC - Value lost: 498
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 25708
-[Debug  :MapValueTracker] BreakRPC - Current Value: 25708
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 453
-[Debug  :MapValueTracker] BreakRPC - Value lost: 47
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 25661
-[Debug  :MapValueTracker] BreakRPC - Current Value: 25661
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 448
-[Debug  :MapValueTracker] BreakRPC - Value lost: 5
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 25656
-[Debug  :MapValueTracker] BreakRPC - Current Value: 25656
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 7415
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1051
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 24605
-[Debug  :MapValueTracker] BreakRPC - Current Value: 24605
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 489
-[Debug  :MapValueTracker] BreakRPC - Value lost: 56
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 24549
-[Debug  :MapValueTracker] BreakRPC - Current Value: 24549
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 6410
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1005
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 23544
-[Debug  :MapValueTracker] BreakRPC - Current Value: 23544
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 419
-[Debug  :MapValueTracker] BreakRPC - Value lost: 53
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 23491
-[Debug  :MapValueTracker] BreakRPC - Current Value: 23491
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 483
-[Debug  :MapValueTracker] BreakRPC - Value lost: 6
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 23485
-[Info   : Unity Log] Changed level to: Level - Arena
-[Info   : Unity Log] Deleted save file and all backups for 'REPO_SAVE_2025_04_27_18_59_20'
-[Debug  :MapValueTracker] BreakRPC - Current Value: 23485
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 5393
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1017
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 22468
-[Debug  :MapValueTracker] BreakRPC - Current Value: 22468
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2050
-[Debug  :MapValueTracker] BreakRPC - Value lost: 250
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 22218
-[Debug  :MapValueTracker] BreakRPC - Current Value: 22218
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1532
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 20686
-[Debug  :MapValueTracker] BreakRPC - Current Value: 20686
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
-[Debug  :MapValueTracker] BreakRPC - Value lost: 739
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 19947
-[Debug  :MapValueTracker] BreakRPC - Current Value: 19947
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 451
-[Debug  :MapValueTracker] BreakRPC - Value lost: 32
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 19915
-[Debug  :MapValueTracker] BreakRPC - Current Value: 19915
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 4471
-[Debug  :MapValueTracker] BreakRPC - Value lost: 922
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 18993
-[Debug  :MapValueTracker] BreakRPC - Current Value: 18993
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1825
-[Debug  :MapValueTracker] BreakRPC - Value lost: 225
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 18768
-[Debug  :MapValueTracker] BreakRPC - Current Value: 18768
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1345
-[Debug  :MapValueTracker] BreakRPC - Value lost: 155
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 18613
-[Debug  :MapValueTracker] BreakRPC - Current Value: 18613
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
-[Debug  :MapValueTracker] BreakRPC - Value lost: 2100
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 16513
-[Debug  :MapValueTracker] BreakRPC - Current Value: 16513
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1591
-[Debug  :MapValueTracker] BreakRPC - Value lost: 234
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 16279
-[Debug  :MapValueTracker] BreakRPC - Current Value: 16279
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1486
-[Debug  :MapValueTracker] BreakRPC - Value lost: 105
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 16174
-[Debug  :MapValueTracker] BreakRPC - Current Value: 16174
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1265
-[Debug  :MapValueTracker] BreakRPC - Value lost: 221
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 15953
-[Debug  :MapValueTracker] BreakRPC - Current Value: 15953
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1243
-[Debug  :MapValueTracker] BreakRPC - Value lost: 22
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 15931
-[Debug  :MapValueTracker] BreakRPC - Current Value: 15931
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1132
-[Debug  :MapValueTracker] BreakRPC - Value lost: 111
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 15820
-[Debug  :MapValueTracker] BreakRPC - Current Value: 15820
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 400
-[Debug  :MapValueTracker] BreakRPC - Value lost: 46
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 15774
-[Debug  :MapValueTracker] BreakRPC - Current Value: 15774
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 986
-[Debug  :MapValueTracker] BreakRPC - Value lost: 114
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 15660
-[Debug  :MapValueTracker] BreakRPC - Current Value: 15660
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 3481
-[Debug  :MapValueTracker] BreakRPC - Value lost: 990
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 14670
-[Debug  :MapValueTracker] BreakRPC - Current Value: 14670
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1181
-[Debug  :MapValueTracker] BreakRPC - Value lost: 164
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 14506
-[Debug  :MapValueTracker] BreakRPC - Current Value: 14506
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 544
-[Debug  :MapValueTracker] BreakRPC - Value lost: 56
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 14450
-[Debug  :MapValueTracker] BreakRPC - Current Value: 14450
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 398
-[Debug  :MapValueTracker] BreakRPC - Value lost: 50
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 14400
-[Debug  :MapValueTracker] BreakRPC - Current Value: 14400
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1500
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 12900
-[Debug  :MapValueTracker] BreakRPC - Current Value: 12900
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 899
-[Debug  :MapValueTracker] BreakRPC - Value lost: 233
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 12667
-[Debug  :MapValueTracker] BreakRPC - Current Value: 12667
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 778
-[Debug  :MapValueTracker] BreakRPC - Value lost: 121
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 12546
-[Debug  :MapValueTracker] BreakRPC - Current Value: 12546
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 558
-[Debug  :MapValueTracker] BreakRPC - Value lost: 220
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 12326
-[Debug  :MapValueTracker] BreakRPC - Current Value: 12326
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 332
-[Debug  :MapValueTracker] BreakRPC - Value lost: 558
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 11768
-[Debug  :MapValueTracker] BreakRPC - Current Value: 11768
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 542
-[Debug  :MapValueTracker] BreakRPC - Value lost: 58
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 11710
-[Debug  :MapValueTracker] BreakRPC - Current Value: 11710
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 886
-[Debug  :MapValueTracker] BreakRPC - Value lost: 100
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 11610
-[Debug  :MapValueTracker] BreakRPC - Current Value: 11610
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2407
-[Debug  :MapValueTracker] BreakRPC - Value lost: 1074
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 10536
-[Debug  :MapValueTracker] BreakRPC - Current Value: 10536
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 373
-[Debug  :MapValueTracker] BreakRPC - Value lost: 46
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 10490
-[Debug  :MapValueTracker] BreakRPC - Current Value: 10490
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1032
-[Debug  :MapValueTracker] BreakRPC - Value lost: 149
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 10341
-[Debug  :MapValueTracker] BreakRPC - Current Value: 10341
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 393
-[Debug  :MapValueTracker] BreakRPC - Value lost: 58
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 10283
-[Debug  :MapValueTracker] BreakRPC - Current Value: 10283
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 541
-[Debug  :MapValueTracker] BreakRPC - Value lost: 59
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 10224
-[Debug  :MapValueTracker] BreakRPC - Current Value: 10224
-[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 348
-[Debug  :MapValueTracker] BreakRPC - Value lost: 50
-[Debug  :MapValueTracker] BreakRPC - After Break Value: 10174
-[Info   : Unity Log] Steam: Lobby member left: YEsNoo
-[Info   : Unity Log] Player left room: YEsNoo
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25342
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25342
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 852
+[Debug  :MapValueTracker] BreakRPC - Value lost: 48
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25294
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Uranium Mug(Clone) Val: 1600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 23694
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Pocket Watch(Clone) Val: 500
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 23194
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Ice Saw(Clone) Val: 2269
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 20925
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Crown(Clone) Val: 500
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 20425
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Diamond(Clone) Val: 2000
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 18425
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Pocket Watch(Clone) Val: 495
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 17930
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Doll(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 17330
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Clown(Clone) Val: 2020
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 15310
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic HDD(Clone) Val: 2600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 12710
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Gem Box(Clone) Val: 852
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 11858
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Emerald Bracelet(Clone) Val: 500
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 11358
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Crown(Clone) Val: 500
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 10858
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Diamond(Clone) Val: 2200
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 8658
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Gem Box(Clone) Val: 758
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 7900
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Ocarina(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 7300
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic Sample(Clone) Val: 2600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 4700
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Crown(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 4100
+[Debug  :MapValueTracker] Extraction Completed!
+[Debug  :MapValueTracker] Checked after Extraction. Val is 4100
+[Info   : Unity Log] Changed level to: Level - Shop
+[Info   : Unity Log] Steam: Locking lobby...
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] In ResetValues()
 [Debug  :MapValueTracker] Total Map Value: 0
 [Debug  :MapValueTracker] Room generation started. Now val is 0
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Television(Clone) Val: 6400
-[Debug  :MapValueTracker] After dollar value set Total Val: 6400
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Master Potion(Clone) Val: 3800
-[Debug  :MapValueTracker] After dollar value set Total Val: 10200
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Power Crystal(Clone) Val: 2800
-[Debug  :MapValueTracker] After dollar value set Total Val: 13000
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Music Box(Clone) Val: 3900
-[Debug  :MapValueTracker] After dollar value set Total Val: 16900
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Dinosaur(Clone) Val: 18000
-[Debug  :MapValueTracker] After dollar value set Total Val: 34900
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1500
-[Debug  :MapValueTracker] After dollar value set Total Val: 36400
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Master Potion(Clone) Val: 3800
-[Debug  :MapValueTracker] After dollar value set Total Val: 40200
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2600
-[Debug  :MapValueTracker] After dollar value set Total Val: 42800
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11900
-[Debug  :MapValueTracker] After dollar value set Total Val: 54700
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Globe(Clone) Val: 1900
-[Debug  :MapValueTracker] After dollar value set Total Val: 56600
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Broom(Clone) Val: 10700
-[Debug  :MapValueTracker] After dollar value set Total Val: 67300
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Doll(Clone) Val: 600
-[Debug  :MapValueTracker] After dollar value set Total Val: 67900
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Fan(Clone) Val: 2700
-[Debug  :MapValueTracker] After dollar value set Total Val: 70600
-[Debug  :MapValueTracker] Created Valuable Object! Valuable Painting(Clone) Val: 21100
-[Debug  :MapValueTracker] After dollar value set Total Val: 91700
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
-[Debug  :MapValueTracker] After CheckForItems Total Val: 91700
-[Debug  :MapValueTracker] Generation done. Now val is 91700. Init Value: 91700
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Changed level to: Level - Lobby
+[Info   : Unity Log] Steam: Unlocking lobby...
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Warning: Unity Log] Received RPC "GrabLinkRPC" for viewID 142 but this PhotonView does not exist! Was remote PV. Remote called. By: #02 'YEsNoo' Maybe GO was destroyed but RPC not cleaned up.
+[Warning: Unity Log] Received RPC "GrabPointSyncRPC" for viewID 142 but this PhotonView does not exist! Was remote PV. Remote called. By: #02 'YEsNoo' Maybe GO was destroyed but RPC not cleaned up.
+[Info   : Unity Log] Changed level to: Level - Wizard
+[Info   : Unity Log] Steam: Locking lobby...
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point.
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point. (ViewID: 146)
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point.
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point. (ViewID: 215)
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Goblin Head(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 2800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Trophy(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 5600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 6100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Cube of Knowledge(Clone) Val: 10600
+[Debug  :MapValueTracker] After dollar value set Total Val: 16700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 17300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 17800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2600
+[Debug  :MapValueTracker] After dollar value set Total Val: 20400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 23200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Love Potion(Clone) Val: 2900
+[Debug  :MapValueTracker] After dollar value set Total Val: 26100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 26700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 27300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Chomp Book(Clone) Val: 2600
+[Debug  :MapValueTracker] After dollar value set Total Val: 29900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2300
+[Debug  :MapValueTracker] After dollar value set Total Val: 32200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Love Potion(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 35000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1900
+[Debug  :MapValueTracker] After dollar value set Total Val: 36900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Gem Box(Clone) Val: 1000
+[Debug  :MapValueTracker] After dollar value set Total Val: 37900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 38500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Plate(Clone) Val: 3000
+[Debug  :MapValueTracker] After dollar value set Total Val: 41500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Vase Big(Clone) Val: 6000
+[Debug  :MapValueTracker] After dollar value set Total Val: 47500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 48100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Toy Monkey(Clone) Val: 1000
+[Debug  :MapValueTracker] After dollar value set Total Val: 49100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 49700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Time Glass(Clone) Val: 7500
+[Debug  :MapValueTracker] After dollar value set Total Val: 57200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 57800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Chomp Book(Clone) Val: 2500
+[Debug  :MapValueTracker] After dollar value set Total Val: 60300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Globe(Clone) Val: 1700
+[Debug  :MapValueTracker] After dollar value set Total Val: 62000
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 62000
+[Debug  :MapValueTracker] Generation done. Now val is 62000. Init Value: 62000
+[Debug  :MapValueTracker] BreakRPC - Current Value: 62000
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2538
+[Debug  :MapValueTracker] BreakRPC - Value lost: 262
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 61738
+[Debug  :MapValueTracker] BreakRPC - Current Value: 61738
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2274
+[Debug  :MapValueTracker] BreakRPC - Value lost: 226
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 61512
+[Debug  :MapValueTracker] BreakRPC - Current Value: 61512
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2028
+[Debug  :MapValueTracker] BreakRPC - Value lost: 246
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 61266
+[Debug  :MapValueTracker] BreakRPC - Current Value: 61266
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1913
+[Debug  :MapValueTracker] BreakRPC - Value lost: 115
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 61151
+[Debug  :MapValueTracker] BreakRPC - Current Value: 61151
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1790
+[Debug  :MapValueTracker] BreakRPC - Value lost: 123
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 61028
+[Debug  :MapValueTracker] BreakRPC - Current Value: 61028
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 896
+[Debug  :MapValueTracker] BreakRPC - Value lost: 104
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 60924
+[Debug  :MapValueTracker] BreakRPC - Current Value: 60924
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 10051
+[Debug  :MapValueTracker] BreakRPC - Value lost: 549
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 60375
+[Debug  :MapValueTracker] BreakRPC - Current Value: 60375
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 474
+[Debug  :MapValueTracker] BreakRPC - Value lost: 26
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 60349
+[Debug  :MapValueTracker] BreakRPC - Current Value: 60349
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1533
+[Debug  :MapValueTracker] BreakRPC - Value lost: 167
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 60182
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Wizard Cube of Knowledge(Clone) Val: 10051
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 50131
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Diamond(Clone) Val: 2300
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 47831
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Globe(Clone) Val: 1533
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 46298
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Ocarina(Clone) Val: 500
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 45798
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Trophy(Clone) Val: 2800
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 42998
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Chomp Book(Clone) Val: 2600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 40398
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 39798
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Love Potion(Clone) Val: 2538
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 37260
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 36660
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Money(Clone) Val: 474
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 36186
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Diamond(Clone) Val: 2800
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 33386
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Uranium Mug(Clone) Val: 1900
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 31486
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Vase Big(Clone) Val: 6000
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 25486
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Toy Monkey(Clone) Val: 896
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 24590
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 23990
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Uranium Plate(Clone) Val: 3000
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 20990
+[Debug  :MapValueTracker] Extraction Completed!
+[Debug  :MapValueTracker] After CheckForItems Total Val: 20990
+[Debug  :MapValueTracker] Checked after Extraction. Val is 20990
+[Debug  :MapValueTracker] Created Valuable Object! Surplus Valuable - Big(Clone) Val: 26172
+[Debug  :MapValueTracker] After dollar value set Total Val: 47162
+[Debug  :MapValueTracker] BreakRPC - Current Value: 47162
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2508
+[Debug  :MapValueTracker] BreakRPC - Value lost: 292
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 46870
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Surplus Valuable - Big(Clone) Val: 26172
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 20698
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Wizard Goblin Head(Clone) Val: 2508
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 18190
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Gem Box(Clone) Val: 1000
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 17190
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Money(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 16590
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Love Potion(Clone) Val: 2900
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 13690
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Goblet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 13090
+[Debug  :MapValueTracker] Extraction Completed!
+[Debug  :MapValueTracker] Checked after Extraction. Val is 13090
+[Info   : Unity Log] Changed level to: Level - Shop
+[Info   : Unity Log] Steam: Locking lobby...
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Changed level to: Level - Lobby
+[Info   : Unity Log] Steam: Unlocking lobby...
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Changed level to: Level - Arctic
+[Info   : Unity Log] Steam: Locking lobby...
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point.
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point. (ViewID: 332)
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point.
+[Info   :com.github.zehsteam.ExtractionPointConfirmButton] ConfirmButton: Set extraction point. (ViewID: 412)
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Frog(Clone) Val: 900
+[Debug  :MapValueTracker] After dollar value set Total Val: 900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Fan(Clone) Val: 2900
+[Debug  :MapValueTracker] After dollar value set Total Val: 3800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 4300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 4900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 5400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 6000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1400
+[Debug  :MapValueTracker] After dollar value set Total Val: 7400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11200
+[Debug  :MapValueTracker] After dollar value set Total Val: 18600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11000
+[Debug  :MapValueTracker] After dollar value set Total Val: 29600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 30100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Plate(Clone) Val: 2300
+[Debug  :MapValueTracker] After dollar value set Total Val: 32400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Server Rack(Clone) Val: 23400
+[Debug  :MapValueTracker] After dollar value set Total Val: 55800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 56400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1700
+[Debug  :MapValueTracker] After dollar value set Total Val: 58100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Doll(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 58700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 59300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 59900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 60400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Gem Box(Clone) Val: 1000
+[Debug  :MapValueTracker] After dollar value set Total Val: 61400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 61900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Vase(Clone) Val: 2900
+[Debug  :MapValueTracker] After dollar value set Total Val: 64800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Science Station(Clone) Val: 23700
+[Debug  :MapValueTracker] After dollar value set Total Val: 88500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 89000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Toy Monkey(Clone) Val: 900
+[Debug  :MapValueTracker] After dollar value set Total Val: 89900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 90500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Fan(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 93300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Trophy(Clone) Val: 2400
+[Debug  :MapValueTracker] After dollar value set Total Val: 95700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic HDD(Clone) Val: 2400
+[Debug  :MapValueTracker] After dollar value set Total Val: 98100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Frog(Clone) Val: 1100
+[Debug  :MapValueTracker] After dollar value set Total Val: 99200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 99800
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 99800
+[Debug  :MapValueTracker] Generation done. Now val is 99800. Init Value: 99800
+[Debug  :MapValueTracker] BreakRPC - Current Value: 99800
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 447
+[Debug  :MapValueTracker] BreakRPC - Value lost: 53
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 99747
+[Debug  :MapValueTracker] BreakRPC - Current Value: 99747
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 442
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 99742
+[Debug  :MapValueTracker] BreakRPC - Current Value: 99742
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 416
+[Debug  :MapValueTracker] BreakRPC - Value lost: 26
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 99716
+[Debug  :MapValueTracker] BreakRPC - Current Value: 99716
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 411
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 99711
+[Debug  :MapValueTracker] BreakRPC - Current Value: 99711
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 22240
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1160
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 98551
+[Debug  :MapValueTracker] BreakRPC - Current Value: 98551
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2592
+[Debug  :MapValueTracker] BreakRPC - Value lost: 308
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 98243
+[Debug  :MapValueTracker] BreakRPC - Current Value: 98243
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2303
+[Debug  :MapValueTracker] BreakRPC - Value lost: 289
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97954
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97954
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2035
+[Debug  :MapValueTracker] BreakRPC - Value lost: 268
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97686
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97686
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2007
+[Debug  :MapValueTracker] BreakRPC - Value lost: 28
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97658
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97658
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1856
+[Debug  :MapValueTracker] BreakRPC - Value lost: 151
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97507
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97507
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2179
+[Debug  :MapValueTracker] BreakRPC - Value lost: 221
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97286
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97286
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1825
+[Debug  :MapValueTracker] BreakRPC - Value lost: 31
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97255
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97255
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1546
+[Debug  :MapValueTracker] BreakRPC - Value lost: 279
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96976
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96976
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1394
+[Debug  :MapValueTracker] BreakRPC - Value lost: 152
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96824
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96824
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1243
+[Debug  :MapValueTracker] BreakRPC - Value lost: 151
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96673
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96673
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1212
+[Debug  :MapValueTracker] BreakRPC - Value lost: 31
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96642
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96642
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 899
+[Debug  :MapValueTracker] BreakRPC - Value lost: 313
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96329
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96329
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 756
+[Debug  :MapValueTracker] BreakRPC - Value lost: 143
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96186
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96186
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 471
+[Debug  :MapValueTracker] BreakRPC - Value lost: 285
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95901
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95901
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 312
+[Debug  :MapValueTracker] BreakRPC - Value lost: 471
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95430
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Fan(Clone) Val: 312
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 95430
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95430
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 448
+[Debug  :MapValueTracker] BreakRPC - Value lost: 52
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95378
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95378
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 399
+[Debug  :MapValueTracker] BreakRPC - Value lost: 49
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95329
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95329
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 346
+[Debug  :MapValueTracker] BreakRPC - Value lost: 53
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95276
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95276
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 297
+[Debug  :MapValueTracker] BreakRPC - Value lost: 49
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95227
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95227
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 292
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95222
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95222
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 241
+[Debug  :MapValueTracker] BreakRPC - Value lost: 51
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95171
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95171
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 189
+[Debug  :MapValueTracker] BreakRPC - Value lost: 52
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95119
+[Debug  :MapValueTracker] Created Valuable Object! Enemy Valuable - Small(Clone) Val: 2100
+[Debug  :MapValueTracker] After dollar value set Total Val: 97219
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97219
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1054
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1046
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96173
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96173
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21502
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2198
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 93975
+[Debug  :MapValueTracker] BreakRPC - Current Value: 93975
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20292
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1210
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 92765
+[Debug  :MapValueTracker] BreakRPC - Current Value: 92765
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18123
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2169
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 90596
+[Debug  :MapValueTracker] BreakRPC - Current Value: 90596
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2053
+[Debug  :MapValueTracker] BreakRPC - Value lost: 126
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 90470
+[Debug  :MapValueTracker] BreakRPC - Current Value: 90470
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1800
+[Debug  :MapValueTracker] BreakRPC - Value lost: 253
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 90217
+[Debug  :MapValueTracker] BreakRPC - Current Value: 90217
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1775
+[Debug  :MapValueTracker] BreakRPC - Value lost: 25
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 90192
+[Debug  :MapValueTracker] BreakRPC - Current Value: 90192
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1546
+[Debug  :MapValueTracker] BreakRPC - Value lost: 229
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89963
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89963
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1521
+[Debug  :MapValueTracker] BreakRPC - Value lost: 25
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89938
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89938
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1265
+[Debug  :MapValueTracker] BreakRPC - Value lost: 256
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89682
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89682
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1138
+[Debug  :MapValueTracker] BreakRPC - Value lost: 127
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89555
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89555
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1115
+[Debug  :MapValueTracker] BreakRPC - Value lost: 23
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89532
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89532
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 988
+[Debug  :MapValueTracker] BreakRPC - Value lost: 127
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89405
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89405
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 726
+[Debug  :MapValueTracker] BreakRPC - Value lost: 262
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89143
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89143
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 704
+[Debug  :MapValueTracker] BreakRPC - Value lost: 22
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89121
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89121
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 680
+[Debug  :MapValueTracker] BreakRPC - Value lost: 24
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89097
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89097
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 450
+[Debug  :MapValueTracker] BreakRPC - Value lost: 230
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 88867
+[Debug  :MapValueTracker] BreakRPC - Current Value: 88867
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 194
+[Debug  :MapValueTracker] BreakRPC - Value lost: 450
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 88417
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Trophy(Clone) Val: 194
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 88417
+[Debug  :MapValueTracker] Created Valuable Object! Enemy Valuable - Big(Clone) Val: 6600
+[Debug  :MapValueTracker] After dollar value set Total Val: 95017
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95017
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2058
+[Debug  :MapValueTracker] BreakRPC - Value lost: 342
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 94675
+[Debug  :MapValueTracker] BreakRPC - Current Value: 94675
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1335
+[Debug  :MapValueTracker] BreakRPC - Value lost: 723
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 93952
+[Debug  :MapValueTracker] BreakRPC - Current Value: 93952
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 16944
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1179
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 92773
+[Debug  :MapValueTracker] BreakRPC - Current Value: 92773
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 15701
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1243
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 91530
+[Debug  :MapValueTracker] BreakRPC - Current Value: 91530
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 14630
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1071
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 90459
+[Debug  :MapValueTracker] BreakRPC - Current Value: 90459
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 13425
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1205
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89254
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89254
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 12154
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1271
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 87983
+[Debug  :MapValueTracker] BreakRPC - Current Value: 87983
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 11900
+[Debug  :MapValueTracker] BreakRPC - Value lost: 254
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 87729
+[Debug  :MapValueTracker] BreakRPC - Current Value: 87729
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 11641
+[Debug  :MapValueTracker] BreakRPC - Value lost: 259
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 87470
+[Debug  :MapValueTracker] BreakRPC - Current Value: 87470
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 11415
+[Debug  :MapValueTracker] BreakRPC - Value lost: 226
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 87244
+[Debug  :MapValueTracker] BreakRPC - Current Value: 87244
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8925
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2490
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 84754
+[Debug  :MapValueTracker] BreakRPC - Current Value: 84754
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8677
+[Debug  :MapValueTracker] BreakRPC - Value lost: 248
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 84506
+[Debug  :MapValueTracker] BreakRPC - Current Value: 84506
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8453
+[Debug  :MapValueTracker] BreakRPC - Value lost: 224
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 84282
+[Debug  :MapValueTracker] BreakRPC - Current Value: 84282
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8196
+[Debug  :MapValueTracker] BreakRPC - Value lost: 257
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 84025
+[Debug  :MapValueTracker] BreakRPC - Current Value: 84025
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 7948
+[Debug  :MapValueTracker] BreakRPC - Value lost: 248
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 83777
+[Debug  :MapValueTracker] BreakRPC - Current Value: 83777
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 6873
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1075
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82702
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82702
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2048
+[Debug  :MapValueTracker] BreakRPC - Value lost: 252
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82450
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82450
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2772
+[Debug  :MapValueTracker] BreakRPC - Value lost: 28
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82422
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82422
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1268
+[Debug  :MapValueTracker] BreakRPC - Value lost: 132
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82290
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82290
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1534
+[Debug  :MapValueTracker] BreakRPC - Value lost: 166
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82124
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82124
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2627
+[Debug  :MapValueTracker] BreakRPC - Value lost: 273
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81851
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81851
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 184
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81846
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81846
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 495
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81841
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81841
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 891
+[Debug  :MapValueTracker] BreakRPC - Value lost: 9
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81832
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81832
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 594
+[Debug  :MapValueTracker] BreakRPC - Value lost: 6
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81826
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81826
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 594
+[Debug  :MapValueTracker] BreakRPC - Value lost: 6
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81820
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81820
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 834
+[Debug  :MapValueTracker] BreakRPC - Value lost: 220
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81600
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81600
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 5879
+[Debug  :MapValueTracker] BreakRPC - Value lost: 721
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 80879
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11200
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 69679
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic Server Rack(Clone) Val: 22240
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 47439
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Doll(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 46839
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 46239
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic Science Station(Clone) Val: 6873
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 39366
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11000
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 28366
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Fan(Clone) Val: 2772
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 25594
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Vase(Clone) Val: 2627
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 22967
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Enemy Valuable - Small(Clone) Val: 834
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 22133
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Arctic HDD(Clone) Val: 1335
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 20798
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 20198
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Gem Box(Clone) Val: 1000
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 19198
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Ocarina(Clone) Val: 411
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 18787
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Crown(Clone) Val: 184
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 18603
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Emerald Bracelet(Clone) Val: 495
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 18108
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Pocket Watch(Clone) Val: 500
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 17608
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Toy Monkey(Clone) Val: 891
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 16717
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Money(Clone) Val: 594
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 16123
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Uranium Plate(Clone) Val: 2048
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 14075
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Uranium Mug(Clone) Val: 1268
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 12807
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Uranium Mug(Clone) Val: 1534
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 11273
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Enemy Valuable - Big(Clone) Val: 5879
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 5394
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 4794
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Valuable Crown(Clone) Val: 594
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 4200
+[Debug  :MapValueTracker] Extraction Completed!
+[Debug  :MapValueTracker] After CheckForItems Total Val: 4200
+[Debug  :MapValueTracker] Checked after Extraction. Val is 4200
+[Debug  :MapValueTracker] Created Valuable Object! Surplus Valuable - Big(Clone) Val: 55653
+[Debug  :MapValueTracker] After dollar value set Total Val: 59853
+[Debug  :MapValueTracker] Created Valuable Object! Enemy Valuable - Small(Clone) Val: 2400
+[Debug  :MapValueTracker] After dollar value set Total Val: 62253
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Surplus Valuable - Big(Clone) Val: 55653
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 6600
+[Debug  :MapValueTracker] Destroying (DPGO)!
+[Debug  :MapValueTracker] Destroyed Valuable Object! Enemy Valuable - Small(Clone) Val: 2400
+[Debug  :MapValueTracker] After DPGO Map Remaining Val: 4200
+[Debug  :MapValueTracker] Extraction Completed!
+[Debug  :MapValueTracker] Checked after Extraction. Val is 4200
+[Info   : Unity Log] Changed level to: Level - Arena
+[Info   : Unity Log] Deleted save file and all backups for 'REPO_SAVE_2025_04_27_21_30_07'
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Gem Box(Clone) Val: 1000
+[Debug  :MapValueTracker] After dollar value set Total Val: 1600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Big Sample(Clone) Val: 2400
+[Debug  :MapValueTracker] After dollar value set Total Val: 4000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Clown(Clone) Val: 2100
+[Debug  :MapValueTracker] After dollar value set Total Val: 6100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2700
+[Debug  :MapValueTracker] After dollar value set Total Val: 8800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Flamethrower(Clone) Val: 3600
+[Debug  :MapValueTracker] After dollar value set Total Val: 12400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Server Rack(Clone) Val: 22600
+[Debug  :MapValueTracker] After dollar value set Total Val: 35000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Sample(Clone) Val: 3000
+[Debug  :MapValueTracker] After dollar value set Total Val: 38000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond Display(Clone) Val: 4300
+[Debug  :MapValueTracker] After dollar value set Total Val: 42300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 42900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Animal Crate(Clone) Val: 22200
+[Debug  :MapValueTracker] After dollar value set Total Val: 65100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Vase Small(Clone) Val: 1600
+[Debug  :MapValueTracker] After dollar value set Total Val: 66700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11400
+[Debug  :MapValueTracker] After dollar value set Total Val: 78100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Painting(Clone) Val: 19900
+[Debug  :MapValueTracker] After dollar value set Total Val: 98000
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 98000
+[Debug  :MapValueTracker] Generation done. Now val is 98000. Init Value: 98000
+[Debug  :MapValueTracker] BreakRPC - Current Value: 98000
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21965
+[Debug  :MapValueTracker] BreakRPC - Value lost: 235
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97765
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97765
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21753
+[Debug  :MapValueTracker] BreakRPC - Value lost: 212
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97553
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97553
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21538
+[Debug  :MapValueTracker] BreakRPC - Value lost: 215
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97338
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97338
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21323
+[Debug  :MapValueTracker] BreakRPC - Value lost: 215
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 97123
+[Debug  :MapValueTracker] BreakRPC - Current Value: 97123
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21102
+[Debug  :MapValueTracker] BreakRPC - Value lost: 221
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96902
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96902
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20897
+[Debug  :MapValueTracker] BreakRPC - Value lost: 205
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96697
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96697
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20697
+[Debug  :MapValueTracker] BreakRPC - Value lost: 200
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96497
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96497
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20465
+[Debug  :MapValueTracker] BreakRPC - Value lost: 232
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96265
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96265
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20260
+[Debug  :MapValueTracker] BreakRPC - Value lost: 205
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 96060
+[Debug  :MapValueTracker] BreakRPC - Current Value: 96060
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20020
+[Debug  :MapValueTracker] BreakRPC - Value lost: 240
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95820
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95820
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 19780
+[Debug  :MapValueTracker] BreakRPC - Value lost: 240
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95580
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95580
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 19538
+[Debug  :MapValueTracker] BreakRPC - Value lost: 242
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95338
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95338
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 19314
+[Debug  :MapValueTracker] BreakRPC - Value lost: 224
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 95114
+[Debug  :MapValueTracker] BreakRPC - Current Value: 95114
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 19076
+[Debug  :MapValueTracker] BreakRPC - Value lost: 238
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 94876
+[Debug  :MapValueTracker] BreakRPC - Current Value: 94876
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18847
+[Debug  :MapValueTracker] BreakRPC - Value lost: 229
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 94647
+[Debug  :MapValueTracker] BreakRPC - Current Value: 94647
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18629
+[Debug  :MapValueTracker] BreakRPC - Value lost: 218
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 94429
+[Debug  :MapValueTracker] BreakRPC - Current Value: 94429
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18385
+[Debug  :MapValueTracker] BreakRPC - Value lost: 244
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 94185
+[Debug  :MapValueTracker] BreakRPC - Current Value: 94185
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18162
+[Debug  :MapValueTracker] BreakRPC - Value lost: 223
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 93962
+[Debug  :MapValueTracker] BreakRPC - Current Value: 93962
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 17921
+[Debug  :MapValueTracker] BreakRPC - Value lost: 241
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 93721
+[Debug  :MapValueTracker] BreakRPC - Current Value: 93721
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 17698
+[Debug  :MapValueTracker] BreakRPC - Value lost: 223
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 93498
+[Debug  :MapValueTracker] BreakRPC - Current Value: 93498
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 17463
+[Debug  :MapValueTracker] BreakRPC - Value lost: 235
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 93263
+[Debug  :MapValueTracker] BreakRPC - Current Value: 93263
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 15398
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2065
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 91198
+[Debug  :MapValueTracker] BreakRPC - Current Value: 91198
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 15171
+[Debug  :MapValueTracker] BreakRPC - Value lost: 227
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 90971
+[Debug  :MapValueTracker] BreakRPC - Current Value: 90971
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1444
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1556
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89415
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89415
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 571
+[Debug  :MapValueTracker] BreakRPC - Value lost: 29
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89386
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89386
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 570
+[Debug  :MapValueTracker] BreakRPC - Value lost: 30
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89356
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89356
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 507
+[Debug  :MapValueTracker] BreakRPC - Value lost: 64
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 89292
+[Debug  :MapValueTracker] BreakRPC - Current Value: 89292
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 10788
+[Debug  :MapValueTracker] BreakRPC - Value lost: 612
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 88680
+[Debug  :MapValueTracker] BreakRPC - Current Value: 88680
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 228
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2700
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 85980
+[Debug  :MapValueTracker] BreakRPC - Current Value: 85980
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 13950
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1221
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 84759
+[Debug  :MapValueTracker] BreakRPC - Current Value: 84759
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 13713
+[Debug  :MapValueTracker] BreakRPC - Value lost: 237
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 84522
+[Debug  :MapValueTracker] BreakRPC - Current Value: 84522
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1444
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 83078
+[Debug  :MapValueTracker] BreakRPC - Current Value: 83078
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 514
+[Debug  :MapValueTracker] BreakRPC - Value lost: 56
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 83022
+[Debug  :MapValueTracker] BreakRPC - Current Value: 83022
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 13504
+[Debug  :MapValueTracker] BreakRPC - Value lost: 209
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82813
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82813
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 445
+[Debug  :MapValueTracker] BreakRPC - Value lost: 62
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82751
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82751
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 13297
+[Debug  :MapValueTracker] BreakRPC - Value lost: 207
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82544
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82544
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 10676
+[Debug  :MapValueTracker] BreakRPC - Value lost: 112
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 82432
+[Debug  :MapValueTracker] BreakRPC - Current Value: 82432
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 10114
+[Debug  :MapValueTracker] BreakRPC - Value lost: 562
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 81870
+[Debug  :MapValueTracker] BreakRPC - Current Value: 81870
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 21403
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1197
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 80673
+[Debug  :MapValueTracker] BreakRPC - Current Value: 80673
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 19073
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2330
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 78343
+[Debug  :MapValueTracker] BreakRPC - Current Value: 78343
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18862
+[Debug  :MapValueTracker] BreakRPC - Value lost: 211
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 78132
+[Debug  :MapValueTracker] BreakRPC - Current Value: 78132
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 899
+[Debug  :MapValueTracker] BreakRPC - Value lost: 101
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 78031
+[Debug  :MapValueTracker] BreakRPC - Current Value: 78031
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2182
+[Debug  :MapValueTracker] BreakRPC - Value lost: 218
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 77813
+[Debug  :MapValueTracker] BreakRPC - Current Value: 77813
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2182
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 75631
+[Debug  :MapValueTracker] BreakRPC - Current Value: 75631
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8945
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1169
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 74462
+[Debug  :MapValueTracker] BreakRPC - Current Value: 74462
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 7917
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1028
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 73434
+[Debug  :MapValueTracker] BreakRPC - Current Value: 73434
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 18646
+[Debug  :MapValueTracker] BreakRPC - Value lost: 216
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 73218
+[Info   :   REPOLib] Adding items.
 [Info   : Unity Log] Changed level to: Level - Lobby Menu
 [Info   : Unity Log] Destroyed all network objects.
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
-[Info   : Unity Log] [2025-04-27T13:21:56] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
-[Warning: Unity Log] [2025-04-27T13:21:56] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
+[Info   : Unity Log] [2025-04-27T14:40:33] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Warning: Unity Log] [2025-04-27T14:40:33] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] In ResetValues()
 [Debug  :MapValueTracker] Total Map Value: 0
@@ -453,14 +1179,19 @@
 [Debug  :MapValueTracker] After CheckForItems Total Val: 0
 [Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
 [Info   : Unity Log] Steam: Unlocking lobby...
-[Warning: Unity Log] [2025-04-27T13:22:00] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for not inited voice #5 of player 1
+[Warning: Unity Log] [2025-04-27T14:40:40] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for not inited voice #3 of player 1
+[Warning: Unity Log] [2025-04-27T14:40:40] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for not inited voice #3 of player 2
+[Info   : Unity Log] Player left room: YEsNoo
+[Info   : Unity Log] Steam: Lobby member left: YEsNoo
+[Info   : Unity Log] Steam: Lobby member joined: YEsNoo
+[Warning: Unity Log] [2025-04-27T14:41:14] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #5 of not inited player 3
+[Info   : Unity Log] Player left room: YEsNoo
+[Info   : Unity Log] Steam: Lobby member left: YEsNoo
 [Info   : Unity Log] Leave Photon
 [Info   : Unity Log] Steam: Leaving lobby... and ruining it for others.
 [Info   : Unity Log] Cancelling Steam Auth Ticket...
 [Info   : Unity Log] Disconnected from server for reason DisconnectByClientLogic
 [Info   : Unity Log] Leave to Main Menu
-[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
-[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] In ResetValues()
 [Debug  :MapValueTracker] Total Map Value: 0
@@ -468,5 +1199,57 @@
 [Debug  :MapValueTracker] Generating Started. Resetting to zero.
 [Debug  :MapValueTracker] After CheckForItems Total Val: 0
 [Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
-[Info   : Unity Log] [2025-04-27T13:24:59] [Info] [PunVoiceClient] [PunVoiceClient(Clone)] PunVoiceClient singleton instance is being reset because destroyed.
+[Info   :   REPOLib] Adding items.
+[Info   : Unity Log] Changed level to: Level - Lobby Menu
+[Info   : Unity Log] [2025-04-27T14:56:02] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Info   : Unity Log] PunVoiceClientLogic Awake
+[Info   : Unity Log] Created lobby on Network Connect.
+[Info   : Unity Log] Steam: Hosting lobby...
+[Info   : Unity Log] Steam: Lobby created with ID: 109775241480153627
+[Info   : Unity Log] Steam: Lobby entered with ID: 109775241480153627
+[Info   : Unity Log] Steam: Region: 
+[Info   : Unity Log] Sending Steam Auth Ticket...
+[Info   : Unity Log] Getting Steam Auth Ticket...
+[Warning:Photon Redirector] Overriding region from 'asia' to 'asia'
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Connected to Master Server
+[Info   : Unity Log] I am the owner.
+[Info   : Unity Log] Steam: Setting lobby data...
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Created room successfully: 109775241480153627
+[Info   : Unity Log] Joined room: 109775241480153627 asia
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241480153627_voice_' region asia.
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Game Mode: Multiplayer
+[Info   : Unity Log] NetworkConnect destroyed.
+[Info   : Unity Log] [2025-04-27T14:56:08] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Warning: Unity Log] [2025-04-27T14:56:08] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Steam: Unlocking lobby...
+[Warning: Unity Log] [2025-04-27T14:56:13] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #5 of not inited player 1
+[Info   : Unity Log] Steam: Lobby member joined: YEsNoo
+[Warning: Unity Log] [2025-04-27T14:57:07] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
+[Info   : Unity Log] Leave Photon
+[Info   : Unity Log] Steam: Leaving lobby... and ruining it for others.
 [Info   : Unity Log] Cancelling Steam Auth Ticket...
+[Warning: Unity Log] RaiseEvent(201) failed. Your event is not being sent! Check if your are in a Room
+[Info   : Unity Log] Disconnected from server for reason DisconnectByClientLogic
+[Info   : Unity Log] Leave to Main Menu
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Cancelling Steam Auth Ticket...
+[Info   : Unity Log] [2025-04-27T14:58:03] [Info] [PunVoiceClient] [PunVoiceClient(Clone)] PunVoiceClient singleton instance is being reset because destroyed.
