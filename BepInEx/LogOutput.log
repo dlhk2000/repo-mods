@@ -10,7 +10,7 @@
 [Message:   BepInEx] Preloader finished
 [Message:   BepInEx] Chainloader ready
 [Message:   BepInEx] Chainloader started
-[Info   :   BepInEx] 3 plugins to load
+[Info   :   BepInEx] 6 plugins to load
 [Info   :   BepInEx] Loading [REPO_HD 1.0.3]
 [Info   :   REPO_HD] Applying Harmony patches
 [Info   :   REPO_HD] Patched ExtractionPoint.Start
@@ -18,6 +18,20 @@
 [Info   :   REPO_HD] Patched RenderTextureMain.Start
 [Info   :   REPO_HD] Patched RenderTextureMain.Update
 [Info   :   REPO_HD] 4 patches applied
+[Info   :   BepInEx] Loading [MapValueTracker 1.2.2]
+[Info   :MapValueTracker] Plugin MapValueTracker is loaded!
+[Info   :   BepInEx] Loading [Menu Lib 2.4.0]
+[Debug  :  Menu Lib] Hooking `MenuPageMain.Start`
+[Debug  :  Menu Lib] Hooking `MenuPageSettings.Start`
+[Debug  :  Menu Lib] Hooking `MenuPageColor.Start`
+[Debug  :  Menu Lib] Hooking `MenuPageEsc.Start`
+[Debug  :  Menu Lib] Hooking `MenuPageLobby.Start`
+[Debug  :  Menu Lib] Hooking `SemiFunc.UIMouseHover`
+[Debug  :  Menu Lib] Hooking `MenuPage.StateClosing`
+[Debug  :  Menu Lib] Hooking `MenuScrollBox.Update`
+[Debug  :  Menu Lib] Hooking `ChatManager.StateInactive`
+[Info   :   BepInEx] Loading [REPOConfig 1.2.0]
+[Debug  :REPOConfig] Hooking `MenuPageMain.Start`
 [Info   :   BepInEx] Loading [Photon Redirector 1.0.1]
 [Info   :Photon Redirector] Plugin Loaded!
 [Info   :Photon Redirector] Using AppID: 20cc4254-e548-418a-9dc1-c9fe16f57461
@@ -32,46 +46,427 @@
 [Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
 [Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
 [Info   : Unity Log] Getting Steam Auth Ticket...
-[Info   : Unity Log] Steam: Game lobby join requested: 109775241171650012
-[Info   : Unity Log] Steam: Lobby entered with ID: 109775241171650012
-[Info   : Unity Log] Steam: Region: 99515094-45b7-4c98-ab70-a448c548c83d
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Steam: Game lobby join requested: 109775241467487678
+[Info   : Unity Log] Steam: Lobby entered with ID: 109775241467487678
+[Info   : Unity Log] Steam: Region: asia
 [Info   : Unity Log] Changed level to: Level - Lobby Menu
 [Info   : Unity Log] PunVoiceClientLogic Awake
-[Info   : Unity Log] Already in lobby on Network Connect. Connecting to region: 99515094-45b7-4c98-ab70-a448c548c83d
+[Info   : Unity Log] Already in lobby on Network Connect. Connecting to region: asia
 [Info   : Unity Log] Sending Steam Auth Ticket...
 [Info   : Unity Log] Getting Steam Auth Ticket...
-[Warning:Photon Redirector] Overriding region from '99515094-45b7-4c98-ab70-a448c548c83d' to 'asia'
+[Warning:Photon Redirector] Overriding region from 'asia' to 'asia'
 [Info   :Photon Redirector] Redirecting Photon Traffic
 [Info   :Photon Redirector] Redirecting Photon Traffic
 [Info   : Unity Log] Connected to Master Server
 [Info   : Unity Log] I am not the owner.
-[Error  : Unity Log] Failed to join room: Failed to get server instance.
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Joined room: 109775241467487678 asia
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241467487678_voice_' region asia.
+[Info   : Unity Log] Game Mode: Multiplayer
+[Info   : Unity Log] NetworkConnect destroyed.
+[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
+[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Info   : Unity Log] [2025-04-27T13:06:39] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   :Photon Redirector] Redirecting Photon Traffic
+[Warning: Unity Log] [2025-04-27T13:06:39] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
+[Warning: Unity Log] [2025-04-27T13:06:43] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
+[Info   : Unity Log] Master client left...
+[Info   : Unity Log] Player left room: YEsNoo
+[Info   : Unity Log] Leave Photon
 [Info   : Unity Log] Steam: Leaving lobby...
 [Info   : Unity Log] Cancelling Steam Auth Ticket...
 [Info   : Unity Log] Disconnected from server for reason DisconnectByClientLogic
 [Info   : Unity Log] Leave to Main Menu
-[Info   : Unity Log] NetworkConnect destroyed.
 [Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
 [Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
-[Info   : Unity Log] Steam: Game lobby join requested: 109775241171650012
-[Info   : Unity Log] Steam: Lobby entered with ID: 109775241171650012
-[Info   : Unity Log] Steam: Region: 99515094-45b7-4c98-ab70-a448c548c83d
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
 [Info   : Unity Log] Changed level to: Level - Lobby Menu
-[Info   : Unity Log] [2025-04-24T13:37:22] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Info   : Unity Log] [2025-04-27T13:08:53] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
 [Info   : Unity Log] PunVoiceClientLogic Awake
-[Info   : Unity Log] Already in lobby on Network Connect. Connecting to region: 99515094-45b7-4c98-ab70-a448c548c83d
+[Info   : Unity Log] Created lobby on Network Connect.
+[Info   : Unity Log] Steam: Hosting lobby...
+[Info   : Unity Log] Steam: Lobby created with ID: 109775241467490249
+[Info   : Unity Log] Steam: Lobby entered with ID: 109775241467490249
+[Info   : Unity Log] Steam: Region: 
 [Info   : Unity Log] Sending Steam Auth Ticket...
 [Info   : Unity Log] Getting Steam Auth Ticket...
-[Warning:Photon Redirector] Overriding region from '99515094-45b7-4c98-ab70-a448c548c83d' to 'asia'
+[Warning:Photon Redirector] Overriding region from 'asia' to 'asia'
 [Info   :Photon Redirector] Redirecting Photon Traffic
 [Info   :Photon Redirector] Redirecting Photon Traffic
 [Info   : Unity Log] Connected to Master Server
-[Info   : Unity Log] I am not the owner.
+[Info   : Unity Log] I am the owner.
+[Info   : Unity Log] Steam: Setting lobby data...
 [Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Created room successfully: 109775241171650012
-[Info   : Unity Log] Joined room: 109775241171650012 asia
-[Info   : Unity Log] Steam: Lobby member joined: clarenesiaw03
+[Info   : Unity Log] Created room successfully: 109775241467490249
+[Info   : Unity Log] Joined room: 109775241467490249 asia
 [Info   :Photon Redirector] Redirecting Photon Traffic
+[Info   : Unity Log] Game Mode: Multiplayer
+[Info   : Unity Log] NetworkConnect destroyed.
+[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
+[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Info   : Unity Log] [2025-04-27T13:08:57] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Warning: Unity Log] [2025-04-27T13:08:57] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
 [Info   :Photon Redirector] Redirecting Photon Traffic
-[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241171650012_voice_' region asia.
+[Info   : Unity Log] Calling OpJoinOrCreateRoom for room name '109775241467490249_voice_' region asia.
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
 [Info   :Photon Redirector] Redirecting Photon Traffic
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Steam: Unlocking lobby...
+[Warning: Unity Log] [2025-04-27T13:09:01] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #3 of not inited player 1
+[Info   : Unity Log] Steam: Lobby member joined: YEsNoo
+[Warning: Unity Log] [2025-04-27T13:10:13] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for voice #1 of not inited player 2
+[Info   : Unity Log] Steam: Locking lobby...
+[Info   : Unity Log] Changed level to: Level - Wizard
+[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
+[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Info   :   REPO_HD] Fixing extraction point text flicker
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Goblet(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 1100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 1600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 2200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Toy Monkey(Clone) Val: 1100
+[Debug  :MapValueTracker] After dollar value set Total Val: 3300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Globe(Clone) Val: 1500
+[Debug  :MapValueTracker] After dollar value set Total Val: 4800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 5300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2100
+[Debug  :MapValueTracker] After dollar value set Total Val: 7400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Money(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 8000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1500
+[Debug  :MapValueTracker] After dollar value set Total Val: 9500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Pocket Watch(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 10000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 10600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Cube of Knowledge(Clone) Val: 10000
+[Debug  :MapValueTracker] After dollar value set Total Val: 20600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 21200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1500
+[Debug  :MapValueTracker] After dollar value set Total Val: 22700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Vase(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 25500
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Emerald Bracelet(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 26100
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Bottle(Clone) Val: 2300
+[Debug  :MapValueTracker] After dollar value set Total Val: 28400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Ocarina(Clone) Val: 500
+[Debug  :MapValueTracker] After dollar value set Total Val: 28900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Crown(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 29500
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 29500
+[Debug  :MapValueTracker] Generation done. Now val is 29500. Init Value: 29500
+[Debug  :MapValueTracker] BreakRPC - Current Value: 29500
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 739
+[Debug  :MapValueTracker] BreakRPC - Value lost: 761
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 28739
+[Debug  :MapValueTracker] BreakRPC - Current Value: 28739
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 570
+[Debug  :MapValueTracker] BreakRPC - Value lost: 30
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 28709
+[Debug  :MapValueTracker] BreakRPC - Current Value: 28709
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 508
+[Debug  :MapValueTracker] BreakRPC - Value lost: 62
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 28647
+[Debug  :MapValueTracker] BreakRPC - Current Value: 28647
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 495
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 28642
+[Debug  :MapValueTracker] BreakRPC - Current Value: 28642
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 472
+[Debug  :MapValueTracker] BreakRPC - Value lost: 23
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 28619
+[Debug  :MapValueTracker] BreakRPC - Current Value: 28619
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1532
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1268
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 27351
+[Debug  :MapValueTracker] BreakRPC - Current Value: 27351
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 545
+[Debug  :MapValueTracker] BreakRPC - Value lost: 55
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 27296
+[Debug  :MapValueTracker] BreakRPC - Current Value: 27296
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 451
+[Debug  :MapValueTracker] BreakRPC - Value lost: 49
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 27247
+[Debug  :MapValueTracker] BreakRPC - Current Value: 27247
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 446
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 27242
+[Debug  :MapValueTracker] BreakRPC - Current Value: 27242
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 9505
+[Debug  :MapValueTracker] BreakRPC - Value lost: 495
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 26747
+[Debug  :MapValueTracker] BreakRPC - Current Value: 26747
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8964
+[Debug  :MapValueTracker] BreakRPC - Value lost: 541
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 26206
+[Debug  :MapValueTracker] BreakRPC - Current Value: 26206
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 8466
+[Debug  :MapValueTracker] BreakRPC - Value lost: 498
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25708
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25708
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 453
+[Debug  :MapValueTracker] BreakRPC - Value lost: 47
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25661
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25661
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 448
+[Debug  :MapValueTracker] BreakRPC - Value lost: 5
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 25656
+[Debug  :MapValueTracker] BreakRPC - Current Value: 25656
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 7415
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1051
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 24605
+[Debug  :MapValueTracker] BreakRPC - Current Value: 24605
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 489
+[Debug  :MapValueTracker] BreakRPC - Value lost: 56
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 24549
+[Debug  :MapValueTracker] BreakRPC - Current Value: 24549
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 6410
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1005
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 23544
+[Debug  :MapValueTracker] BreakRPC - Current Value: 23544
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 419
+[Debug  :MapValueTracker] BreakRPC - Value lost: 53
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 23491
+[Debug  :MapValueTracker] BreakRPC - Current Value: 23491
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 483
+[Debug  :MapValueTracker] BreakRPC - Value lost: 6
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 23485
+[Info   : Unity Log] Changed level to: Level - Arena
+[Info   : Unity Log] Deleted save file and all backups for 'REPO_SAVE_2025_04_27_18_59_20'
+[Debug  :MapValueTracker] BreakRPC - Current Value: 23485
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 5393
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1017
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 22468
+[Debug  :MapValueTracker] BreakRPC - Current Value: 22468
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2050
+[Debug  :MapValueTracker] BreakRPC - Value lost: 250
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 22218
+[Debug  :MapValueTracker] BreakRPC - Current Value: 22218
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1532
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 20686
+[Debug  :MapValueTracker] BreakRPC - Current Value: 20686
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
+[Debug  :MapValueTracker] BreakRPC - Value lost: 739
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 19947
+[Debug  :MapValueTracker] BreakRPC - Current Value: 19947
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 451
+[Debug  :MapValueTracker] BreakRPC - Value lost: 32
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 19915
+[Debug  :MapValueTracker] BreakRPC - Current Value: 19915
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 4471
+[Debug  :MapValueTracker] BreakRPC - Value lost: 922
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 18993
+[Debug  :MapValueTracker] BreakRPC - Current Value: 18993
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1825
+[Debug  :MapValueTracker] BreakRPC - Value lost: 225
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 18768
+[Debug  :MapValueTracker] BreakRPC - Current Value: 18768
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1345
+[Debug  :MapValueTracker] BreakRPC - Value lost: 155
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 18613
+[Debug  :MapValueTracker] BreakRPC - Current Value: 18613
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 0
+[Debug  :MapValueTracker] BreakRPC - Value lost: 2100
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 16513
+[Debug  :MapValueTracker] BreakRPC - Current Value: 16513
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1591
+[Debug  :MapValueTracker] BreakRPC - Value lost: 234
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 16279
+[Debug  :MapValueTracker] BreakRPC - Current Value: 16279
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1486
+[Debug  :MapValueTracker] BreakRPC - Value lost: 105
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 16174
+[Debug  :MapValueTracker] BreakRPC - Current Value: 16174
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1265
+[Debug  :MapValueTracker] BreakRPC - Value lost: 221
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 15953
+[Debug  :MapValueTracker] BreakRPC - Current Value: 15953
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1243
+[Debug  :MapValueTracker] BreakRPC - Value lost: 22
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 15931
+[Debug  :MapValueTracker] BreakRPC - Current Value: 15931
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1132
+[Debug  :MapValueTracker] BreakRPC - Value lost: 111
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 15820
+[Debug  :MapValueTracker] BreakRPC - Current Value: 15820
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 400
+[Debug  :MapValueTracker] BreakRPC - Value lost: 46
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 15774
+[Debug  :MapValueTracker] BreakRPC - Current Value: 15774
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 986
+[Debug  :MapValueTracker] BreakRPC - Value lost: 114
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 15660
+[Debug  :MapValueTracker] BreakRPC - Current Value: 15660
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 3481
+[Debug  :MapValueTracker] BreakRPC - Value lost: 990
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 14670
+[Debug  :MapValueTracker] BreakRPC - Current Value: 14670
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1181
+[Debug  :MapValueTracker] BreakRPC - Value lost: 164
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 14506
+[Debug  :MapValueTracker] BreakRPC - Current Value: 14506
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 544
+[Debug  :MapValueTracker] BreakRPC - Value lost: 56
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 14450
+[Debug  :MapValueTracker] BreakRPC - Current Value: 14450
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 398
+[Debug  :MapValueTracker] BreakRPC - Value lost: 50
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 14400
+[Debug  :MapValueTracker] BreakRPC - Current Value: 14400
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 20
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1500
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 12900
+[Debug  :MapValueTracker] BreakRPC - Current Value: 12900
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 899
+[Debug  :MapValueTracker] BreakRPC - Value lost: 233
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 12667
+[Debug  :MapValueTracker] BreakRPC - Current Value: 12667
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 778
+[Debug  :MapValueTracker] BreakRPC - Value lost: 121
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 12546
+[Debug  :MapValueTracker] BreakRPC - Current Value: 12546
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 558
+[Debug  :MapValueTracker] BreakRPC - Value lost: 220
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 12326
+[Debug  :MapValueTracker] BreakRPC - Current Value: 12326
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 332
+[Debug  :MapValueTracker] BreakRPC - Value lost: 558
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 11768
+[Debug  :MapValueTracker] BreakRPC - Current Value: 11768
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 542
+[Debug  :MapValueTracker] BreakRPC - Value lost: 58
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 11710
+[Debug  :MapValueTracker] BreakRPC - Current Value: 11710
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 886
+[Debug  :MapValueTracker] BreakRPC - Value lost: 100
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 11610
+[Debug  :MapValueTracker] BreakRPC - Current Value: 11610
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 2407
+[Debug  :MapValueTracker] BreakRPC - Value lost: 1074
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 10536
+[Debug  :MapValueTracker] BreakRPC - Current Value: 10536
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 373
+[Debug  :MapValueTracker] BreakRPC - Value lost: 46
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 10490
+[Debug  :MapValueTracker] BreakRPC - Current Value: 10490
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 1032
+[Debug  :MapValueTracker] BreakRPC - Value lost: 149
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 10341
+[Debug  :MapValueTracker] BreakRPC - Current Value: 10341
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 393
+[Debug  :MapValueTracker] BreakRPC - Value lost: 58
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 10283
+[Debug  :MapValueTracker] BreakRPC - Current Value: 10283
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 541
+[Debug  :MapValueTracker] BreakRPC - Value lost: 59
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 10224
+[Debug  :MapValueTracker] BreakRPC - Current Value: 10224
+[Debug  :MapValueTracker] BreakRPC - Valuable Object current value: 348
+[Debug  :MapValueTracker] BreakRPC - Value lost: 50
+[Debug  :MapValueTracker] BreakRPC - After Break Value: 10174
+[Info   : Unity Log] Steam: Lobby member left: YEsNoo
+[Info   : Unity Log] Player left room: YEsNoo
+[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
+[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Television(Clone) Val: 6400
+[Debug  :MapValueTracker] After dollar value set Total Val: 6400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Master Potion(Clone) Val: 3800
+[Debug  :MapValueTracker] After dollar value set Total Val: 10200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Power Crystal(Clone) Val: 2800
+[Debug  :MapValueTracker] After dollar value set Total Val: 13000
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Music Box(Clone) Val: 3900
+[Debug  :MapValueTracker] After dollar value set Total Val: 16900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Dinosaur(Clone) Val: 18000
+[Debug  :MapValueTracker] After dollar value set Total Val: 34900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Uranium Mug(Clone) Val: 1500
+[Debug  :MapValueTracker] After dollar value set Total Val: 36400
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Master Potion(Clone) Val: 3800
+[Debug  :MapValueTracker] After dollar value set Total Val: 40200
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Diamond(Clone) Val: 2600
+[Debug  :MapValueTracker] After dollar value set Total Val: 42800
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Arctic Creature Leg(Clone) Val: 11900
+[Debug  :MapValueTracker] After dollar value set Total Val: 54700
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Globe(Clone) Val: 1900
+[Debug  :MapValueTracker] After dollar value set Total Val: 56600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Wizard Broom(Clone) Val: 10700
+[Debug  :MapValueTracker] After dollar value set Total Val: 67300
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Doll(Clone) Val: 600
+[Debug  :MapValueTracker] After dollar value set Total Val: 67900
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Fan(Clone) Val: 2700
+[Debug  :MapValueTracker] After dollar value set Total Val: 70600
+[Debug  :MapValueTracker] Created Valuable Object! Valuable Painting(Clone) Val: 21100
+[Debug  :MapValueTracker] After dollar value set Total Val: 91700
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 91700
+[Debug  :MapValueTracker] Generation done. Now val is 91700. Init Value: 91700
+[Info   : Unity Log] Changed level to: Level - Lobby Menu
+[Info   : Unity Log] Destroyed all network objects.
+[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
+[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Info   : Unity Log] [2025-04-27T13:21:56] [Info] [LOGGER] [VoiceLogger] Disabling VoiceLogger duplicates at the scene root.
+[Warning: Unity Log] [2025-04-27T13:21:56] [Warning] [PhotonVoiceView] [Voice(Clone)] PhotonVoiceView.RecorderInUse.TransmitEnabled is false, don't forget to set it to true to enable transmission.
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] Steam: Unlocking lobby...
+[Warning: Unity Log] [2025-04-27T13:22:00] [Warning] [PunVoiceClient] [PunVoiceClient(Clone)] [PV] Frame event for not inited voice #5 of player 1
+[Info   : Unity Log] Leave Photon
+[Info   : Unity Log] Steam: Leaving lobby... and ruining it for others.
+[Info   : Unity Log] Cancelling Steam Auth Ticket...
+[Info   : Unity Log] Disconnected from server for reason DisconnectByClientLogic
+[Info   : Unity Log] Leave to Main Menu
+[Info   :   REPO_HD] Enabled TAA on Camera Main (UnityEngine.Camera)
+[Info   :   REPO_HD] Enabled SMAA on Camera Top (UnityEngine.Camera)
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] In ResetValues()
+[Debug  :MapValueTracker] Total Map Value: 0
+[Debug  :MapValueTracker] Room generation started. Now val is 0
+[Debug  :MapValueTracker] Generating Started. Resetting to zero.
+[Debug  :MapValueTracker] After CheckForItems Total Val: 0
+[Debug  :MapValueTracker] Generation done. Now val is 0. Init Value: 0
+[Info   : Unity Log] [2025-04-27T13:24:59] [Info] [PunVoiceClient] [PunVoiceClient(Clone)] PunVoiceClient singleton instance is being reset because destroyed.
+[Info   : Unity Log] Cancelling Steam Auth Ticket...

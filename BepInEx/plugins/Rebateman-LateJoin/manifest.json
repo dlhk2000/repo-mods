@@ -1,0 +1,9 @@
+{
+    "name": "LateJoin",
+    "version_number": "0.1.2",
+    "website_url": "https://github.com/Rebateman/LateJoin",
+    "description": "Faced with friends that want to join an active game? Gone are the days of closing and re-opening your lobby! Just invite your friends after you've shopped!",
+    "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100"
+    ]
+}
